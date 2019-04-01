@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>Easybook Sdn. Bhd. Index Page 1</title>
+    <meta charset="utf-8">
+    <meta property="fb:app_id" content="622682248182826" />
+    <meta property="og:url" content="https://ezb2018.github.io/fbtest/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Easybook Friend-Refer-Friend">
+    <meta property="og:description" content="Up to 80% discount discount when your friends joined under your name. What you waiting for ? Share Now !!!">
+    <meta property="og:image" content="https://cdn.msiapromos.com/wp-content/uploads/2015/09/Easybook-Logo-28-Sep-2015.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+	            appId            : '622682248182826',
+	            autoLogAppEvents : true,
+	            xfbml            : true,
+	            version          : 'v3.2'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+	        var js, fjs = d.getElementsByTagName(s)[0];
+	        if (d.getElementById(id)) {return;}
+	        js = d.createElement(s); js.id = id;
+	        js.src = "//connect.facebook.net/en_US/sdk.js";
+	        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+<body>
+    <a href="#" onclick="shareOriginal();">Share with original og:meta data</a>
+
+
+    <script>
+        function shareOriginal() {
+			FB.ui({
+                method: 'share_open_graph',
+                action_type: 'og.likes',
+                action_properties: JSON.stringify({
+                    object: {
+                        'og:url': 'https://ezb2018.github.io/fbtest/',
+                        'og:title': '1',
+                        'og:description': '2',
+                        'og:image': 'https://cdn.msiapromos.com/wp-content/uploads/2015/09/Easybook-Logo-28-Sep-2015.jpg'
+                    }
+                })
+            },
+			function (response) {
+				// Action after response
+			});
+        }
+
+    </script>
+</body>
+</html>
