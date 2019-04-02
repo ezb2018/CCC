@@ -37,20 +37,10 @@
 
     <script>
         function shareOriginal() {
-			FB.login(function (response) {
-				if (response.authResponse) {
-					FB.api('https://graph.facebook.com/','post',  {
-						id: 'https://ezb2018.github.io/CCC',
-						scrape: true,
-						access_token: response.authResponse.accessToken
-					}, function(response) {
-					});
-					FB.ui({
-						method: 'share',
-						href: 'https://ezb2018.github.io/CCC',
-					}, function (response) { });
-				}
-			});
+			FB.ui({
+				method: 'share',
+				href: 'https://ezb2018.github.io/CCC',
+			}, function (response) { });
         }
     </script>
 </body>
