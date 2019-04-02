@@ -44,11 +44,11 @@
 						scrape: true,
 						access_token: response.authResponse.accessToken
 					}, function(response) {
-						FB.ui({
-							method: 'share',
-							href: 'https://ezb2018.github.io/CCC',
-						}, function (response) { });
 					});
+					FB.ui({
+						method: 'share',
+						href: 'https://ezb2018.github.io/CCC',
+					}, function (response) { });
 				}
 			});
         }
